@@ -1,18 +1,26 @@
-## Getting Started
+## Controle de Saques
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Você está desenvolvendo um programa simples em Java para auxiliar um cliente a realizar saques de uma conta bancária. O cliente pode fazer saques até atingir um limite diário predefinido.
 
-## Folder Structure
+## Entrada
 
-The workspace contains two folders by default, where:
+- O programa solicitará ao usuário que informe o limite diário de saque.
+- Em seguida, o programa solicitará ao usuário que informe o valor do primeiro saque.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Saída
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Utilizando um laço `for`, o programa iterará sobre os saques.
+- Para cada saque, o programa verificará se o valor ultrapassa o limite diário.
+  - Se ultrapassar, o programa informará que o limite foi atingido e encerrará o loop.
+  - Se não ultrapassar, o programa informará que o saque foi realizado com sucesso.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Exemplos
 
-## Dependency Management
+A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+| Entrada | Saída |
+| ------- | ----- |
+| 1500 / 430 / 0 | Saque realizado. Limite restante: 1070.0 / Transacoes encerradas. |
+| 500 / 1500 | Limite diario de saque atingido. Transacoes encerradas. |
+| 80 / 40 / 0 | Saque realizado. Limite restante: 40.0 / Transacoes encerradas. |
+  
