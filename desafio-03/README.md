@@ -1,18 +1,23 @@
-## Getting Started
+## Verificador de Idade para Conta Bancária
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Você está desenvolvendo um programa simples em Java para verificar se um cliente é elegível para criar uma conta bancária. A condição é que o cliente deve ter pelo menos 18 anos de idade.
 
-## Folder Structure
+## Entrada
 
-The workspace contains two folders by default, where:
+- O programa solicitará ao usuário que digite sua idade.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Saída
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Utilizando apenas um bloco `if` e `else`, o programa verificará se a idade do cliente é igual ou superior a 18 anos.
+- Se a idade for maior ou igual a 18, o programa informará que o cliente é elegível para criar uma conta bancária.
+- Se a idade for menor que 18, o programa informará que o cliente não é elegível para criar uma conta bancária.
+  
+## Exemplos
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+| Entrada | Saída |
+| ------- | ----- |
+| 17 | Voce nao esta elegivel para criar uma conta bancaria. |
+| 26 | Voce esta elegivel para criar uma conta bancaria. |
+| 18 | Voce esta elegivel para criar uma conta bancaria. |
